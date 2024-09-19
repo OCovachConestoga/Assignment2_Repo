@@ -46,10 +46,13 @@ int main() {
 		studentData.push_back(tempStudent);
 	}
 
+	// Only runs this section in debug mode
+	#ifdef _DEBUG
 	// Loop through the vector space and print the names to show the data has been parsed
 	for (STUDENT_DATA student : studentData) {
 		cout << student.firstName << "," << student.lastName << endl;
 	}
+	#endif
 
 
 	return 1;
